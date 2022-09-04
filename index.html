@@ -7,62 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca CEP</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/css.css">
 </head>
 
 <body>
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-10 col-md-8 ">
-                <div class="border border-primary shadow">
-                    <h1 class="text-center text-secondary">
-                        Buscar o CEP
-                    </h1>
-                    <h1>
-                        <form>
-                            <div class=" form-group row ">
-                                <div class="col-12 col-sm-6 col-md-6 ">
-                                    <input type="text " name="CEP " id="CEP" class="form-control " placeholder="CEP ">
-                                </div>
-                                <div class="col-12 col-sm-2 col-md-2 ">
-                                    <button class="btn btn-success btn-block ">
-                                        Buscar
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <div class="col-12 col-sm-8 col-md-8 ">
-                                    <input type="text " name="LOGRADOURO " id="LOGRADOURO " class="form-control " placeholder="LOGRADOURO ">
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <div class="col-12 col-sm-2 col-md-2 ">
-                                    <input type="number " name="NUMERO " id="NUMERO " class="form-control " placeholder="Nº ">
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <div class="col-12 col-sm-6 col-md-6 ">
-                                    <input type="text " name="Complemento " id=" Complemento " class="form-control " placeholder="Complemento ">
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <div class="col-12 col-sm-6 col-md-6 ">
-                                    <input type="text " name="BAIRRO " id=" BAIRRO " class="form-control " placeholder="BAIRRO ">
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <div class="col-12 col-sm-6 col-md-6 ">
-                                    <input type="text " name="LOCALIDADE " id=" LOCALIDADE " class="form-control " placeholder="LOCALIDADE ">
-                                </div>
-                            </div>
-                            <div class="form-group row ">
-                                <div class="col-12 col-sm-2 col-md-2 ">
-                                    <input type="text " name="UF " id=" UF " class="form-control " placeholder="UF ">
-                                </div>
-                            </div>
-                        </form>
-                    </h1>
-                </div>
+            <div class="col-12 col-sm-6 col-md-6">
+                <form class="shadow p-4 rounded tact">
+                    <h2 class="text-center text-info main-title">BUSCAR CEP</h2>
+                    <div class="form-group mt-3">
+                        <label for="exampleInputEmail1">CEP:</label>
+                        <input type="text" id="CEP" name="cep" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu cep">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-10">
+                            <label for="exampleInputEmail1">Logradouro:</label>
+                            <input type="text" id="LOGRADOURO" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Logradouro">
+                        </div>
+                        <div class="form-group col-2">
+                            <label for="exampleInputEmail1">Nº:</label>
+                            <input type="number" id="NUMERO" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="00">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Complemento:</label>
+                        <input type="text" id="COMPLEMENTO" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Complemento">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Bairro:</label>
+                        <input type="text" id="BAIRRO" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Bairro">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-8">
+                            <label for="exampleInputEmail1">Localidade:</label>
+                            <input type="text" id="LOCALIDADE" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Localidade">
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="exampleInputEmail1">UF:</label>
+                            <input type="text" id="UF" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="UF">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btN btn-info btn-lg btn-block mt-3">Enviar</button>
+                </form>
             </div>
         </div>
     </div>

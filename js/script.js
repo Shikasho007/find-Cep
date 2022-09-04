@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.btn').click(function(e) {
+    $('.btN').click(function(e) {
         e.preventDefault()
 
         let cep = $('#CEP').val()
